@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/105443-support-cschanot-docker-templates/</Support>
   <Project>https://www.ntop.org/</Project>
-  <Overview>High-Speed Web-based Traffic Analysis and Flow Collection   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+  <Overview>High-Speed Web-based Traffic Analysis and Flow Collection &#xD;
 &#xD;
 Click advanced view and in post arguments change eth0 to the network interface you want to monitor.&#xD;
 &#xD;
@@ -21,10 +21,10 @@ If you have a license you would need to add another path mapping to include it a
   <ExtraParams/>
   <PostArgs>--community -i eth0</PostArgs>
   <CPUset/>
-  <DateInstalled>1617980689</DateInstalled>
+  <DateInstalled>1618006420</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>High-Speed Web-based Traffic Analysis and Flow Collection   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container&#xD;
+  <Description>High-Speed Web-based Traffic Analysis and Flow Collection &#xD;
 &#xD;
 Click advanced view and in post arguments change eth0 to the network interface you want to monitor.&#xD;
 &#xD;
