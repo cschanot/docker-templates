@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>kibana</Name>
+  <Repository>kibana:7.12.0</Repository>
+  <Registry>https://hub.docker.com/_/kibana/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/105443-support-cschanot-docker-templates/</Support>
+  <Project>https://www.elastic.co/kibana</Project>
+  <Overview>Kibana gives shape to any kind of data &#x2014; structured and unstructured &#x2014; indexed in Elasticsearch.  &#xD;
+&#xD;
+Please install and run Elasticsearch docker first. Set the tag to it to match the one you are using &#xD;
+on Kibana (currently 7.12.0)&#xD;
+&#xD;
+Change ELASTIC_SEARCH_HOSTS to match the address of your Elasticsearch</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/cschanot/docker-templates/main/images/kibana.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1618020777</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Kibana gives shape to any kind of data &#x2014; structured and unstructured &#x2014; indexed in Elasticsearch.  &#xD;
+&#xD;
+Please install and run Elasticsearch docker first. Set the tag to it to match the one you are using &#xD;
+on Kibana (currently 7.12.0)&#xD;
+&#xD;
+Change ELASTIC_SEARCH_HOSTS to match the address of your Elasticsearch</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5601</HostPort>
+        <ContainerPort>5601</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>http://192.168.1.20:9200</Value>
+      <Name>ELASTICSEARCH_HOSTS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="ELASTICSEARCH_HOSTS" Target="ELASTICSEARCH_HOSTS" Default="" Mode="" Description="Container Variable: ELASTICSEARCH_HOSTS" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.20:9200</Config>
+  <Config Name="Web UI" Target="5601" Default="" Mode="tcp" Description="Container Port: 5601" Type="Port" Display="always" Required="false" Mask="false">5601</Config>
+</Container>
