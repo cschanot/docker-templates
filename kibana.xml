@@ -16,13 +16,13 @@ on Kibana (currently 7.12.0)&#xD;
 &#xD;
 Change ELASTIC_SEARCH_HOSTS to match the address of your Elasticsearch</Overview>
   <Category>Tools: Other:</Category>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:5601]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/cschanot/docker-templates/main/images/kibana.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1618020777</DateInstalled>
+  <DateInstalled>1618099078</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Kibana gives shape to any kind of data &#x2014; structured and unstructured &#x2014; indexed in Elasticsearch.  &#xD;
