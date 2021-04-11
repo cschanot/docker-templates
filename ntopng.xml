@@ -18,15 +18,18 @@ Since this is running host mode you can change the default port of 3000 to whate
 changing the --http-port in post arguments to the port you would like to use. Don't forget to change&#xD;
 WebUI to match.&#xD;
 &#xD;
-</Overview>
+This image runs a redis server so if you are already hosting one you will need to add &#xD;
+-r YOUR_REDIST_SERVER:YOUR_REDIS_PORT at the very least to post arguments. The&#xD;
+format that -r takes is the following: [h[:port[:pwd]]][@db-id] &#xD;
+You will also want this container to start after your redis container so it doesn't conflict.</Overview>
   <Category>Security: Network:Management Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/cschanot/docker-templates/main/images/ntopng-icon-150x150.png</Icon>
   <ExtraParams/>
-  <PostArgs>-i eth0 --http-port 0.0.0.0:3000</PostArgs>
+  <PostArgs>-i eth0 --http-port 0.0.0.0:3000 -r 192.168.1.20:6379@2</PostArgs>
   <CPUset/>
-  <DateInstalled>1618098064</DateInstalled>
+  <DateInstalled>1618145510</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>High-Speed Web-based Traffic Analysis and Flow Collection &#xD;
@@ -38,7 +41,10 @@ Since this is running host mode you can change the default port of 3000 to whate
 changing the --http-port in post arguments to the port you would like to use. Don't forget to change&#xD;
 WebUI to match.&#xD;
 &#xD;
-</Description>
+This image runs a redis server so if you are already hosting one you will need to add &#xD;
+-r YOUR_REDIST_SERVER:YOUR_REDIS_PORT at the very least to post arguments. The&#xD;
+format that -r takes is the following: [h[:port[:pwd]]][@db-id] &#xD;
+You will also want this container to start after your redis container so it doesn't conflict.</Description>
   <Networking>
     <Mode>host</Mode>
     <Publish/>
