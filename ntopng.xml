@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>ntopng</Name>
-  <Repository>ntop/ntopng:stable</Repository>
+  <Repository>ntop/ntopng</Repository>
   <Registry>https://hub.docker.com/r/ntop/ntopng/</Registry>
   <Network>host</Network>
   <MyIP/>
